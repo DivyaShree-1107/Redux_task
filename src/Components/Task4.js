@@ -2,11 +2,13 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import {updateNumAdd,updateNumSub,updateInc} from '../Actions/Task4Actions';
 import './Task4.css';
+import Navbar from '../Navbar/Navbar';
 
 class Task4 extends Component {
     render() {
         return (
             <div>
+                <Navbar/>
                 <div className="title">Number:</div>
                 <div className="number">{this.props.num}</div>                       
                 <div >

@@ -16,10 +16,10 @@ export function updateNumSub() {
         });
     }
 }
-export function updateInc(no) {
+export function updateInc() {
     return function (dispatch){
         dispatch ({
-            type : 'update_numinc', value : no
+            type : 'update_numinc', value : 1
         });
     }
 }

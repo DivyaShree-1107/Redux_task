@@ -2,12 +2,15 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import {updateA3,updateB3,updateC3,updateD3} from '../Actions/Task3Actions';
 import './Task3.css';
+import Navbar from '../Navbar/Navbar';
 
 class Task3 extends Component {
     render() {
         return (
-            <div className="main">
-                
+            <div>
+                <div><Navbar/></div>
+                <div className="main">
+        
                 <div>{this.props.ageA}</div> 
                 <div> {this.props.ageB}</div> 
                 <div> {this.props.ageC}</div> 
@@ -16,7 +19,7 @@ class Task3 extends Component {
                 <div><button className="button" onClick={()=>this.props.updateB3(this.props.ageD)}>UPDATE B</button></div>
                 <div><button className="button" onClick={()=>this.props.updateC3(this.props.ageA)}>UPDATE C</button></div>
                 <div> <button className="button" onClick={()=>this.props.updateD3(this.props.ageB)}>UPDATE D</button></div>
-                
+                </div> 
            </div>
         );
     }
