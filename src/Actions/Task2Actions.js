@@ -1,17 +1,10 @@
 import * as ActionTypes from './Types';
 
-export function updateA (b) {
+export function updateA () {
     return function (dispatch){
         dispatch ({
-            type : 'UPDATE_A', value : b
+            type : 'update_num', value : 1
         });
     }
 }
 
-export function updateB (a) {
-    return function (dispatch){
-        dispatch ({
-            type : 'UPDATE_B', value : a
-        });
-    }
-}
